@@ -44,6 +44,11 @@ export const AppComponent = {
       };
     }
 
+    resetForm() {
+      this.answers = [];
+      this.resetValidationState();
+    }
+
     $onInit() {
       this.data = require('../data.json');
       this.answers = [];

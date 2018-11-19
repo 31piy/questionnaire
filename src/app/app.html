@@ -23,7 +23,9 @@
 
           <div class="questions-actions p-2">
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-secondary">Clear Values</button>
+            <button type="button" class="btn btn-secondary" ng-click="$ctrl.resetForm()">
+              Clear Values
+            </button>
 
             <div class="d-inline-flex text-danger">
               {{$ctrl.state.validation.globalMessage}}
