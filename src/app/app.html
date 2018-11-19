@@ -1,0 +1,33 @@
+<div class="container-fluid app-container p-4 h-100">
+  <div class="card h-100 shadow">
+    <div class="card-body h-100">
+      <div class="questions-wrapper h-100">
+        <div class="questions-contents">
+          <div class="questions">
+            <ul class="list-unstyled">
+              <li class="question" ng-repeat="question in $ctrl.data.questions track by $index">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{question.title}}</h5>
+                    <div class="form-group">
+                      <select class="form-control w-50" ng-options="option.key as option.label for option in question.options"
+                              ng-model="$ctrl.answers[$index]">
+                        <option value="" disabled>Choose an answer</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="questions-actions p-2">
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary">Clear Values</button>
+          </div>
+        </div>
+        <div class="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
