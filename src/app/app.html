@@ -2,11 +2,11 @@
   <div class="card h-100 shadow">
     <div class="card-body h-100">
       <div class="questions-wrapper h-100">
-        <div class="questions-contents">
+        <form name="questionsForm" class="questions-contents" ng-submit="$ctrl.scanAnswers()">
           <div class="questions">
             <ul class="list-unstyled">
               <li class="question" ng-repeat="question in $ctrl.data.questions track by $index">
-                <div class="card">
+                <div class="card" ng-class="{'border-danger': $ctrl.state.validation.answers[$index]}">
                   <div class="card-body">
                     <h5 class="card-title">{{question.title}}</h5>
                     <div class="form-group">
@@ -22,10 +22,15 @@
           </div>
 
           <div class="questions-actions p-2">
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
             <button type="button" class="btn btn-secondary">Clear Values</button>
+
+            <div class="d-inline-flex text-danger">
+              {{$ctrl.state.validation.globalMessage}}
+            </div>
           </div>
-        </div>
+        </form>
+
         <div class="result"></div>
       </div>
     </div>

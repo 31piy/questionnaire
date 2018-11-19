@@ -1,134 +1,134 @@
 {
   "questions": [
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "Entomology is the science that studies",
+      "answer_key": "1",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "Behavior of human beings"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "Insects"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "The origin and history of technical and scientific terms"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "The formation of rocks"
         }
       ]
     },
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "Garampani sanctuary is located at",
+      "answer_key": "1",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "Junagarh, Gujarat"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "Diphu, Assam"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "Kohima, Nagaland"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "Gangtok, Sikkim"
         }
       ]
     },
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "For which of the following disciplines is Nobel Prize awarded?",
+      "answer_key": "3",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "Physics and Chemistry"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "Physiology or Medicine"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "Literature, Peace and Economics"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "All of the above"
         }
       ]
     },
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "Hitler party which came into power in 1933 is known as",
+      "answer_key": "1",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "Labour Party"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "Nazi Party"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "Ku-Klux-Klan"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "Democratic Party"
         }
       ]
     },
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "Fastest shorthand writer was",
+      "answer_key": "0",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "Dr. G. D. Bist"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "J.R.D. Tata"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "J.M. Tagore"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "Khudada Khan"
         }
       ]
     },
     {
-      "title": "24 - 5",
-      "answer_key": "2",
+      "title": "First Afghan War took place in",
+      "answer_key": "0",
       "options": [
         {
           "key": "0",
-          "label": "10"
+          "label": "1839"
         },
         {
           "key": "1",
-          "label": "11"
+          "label": "1843"
         },
         {
           "key": "2",
-          "label": "19"
+          "label": "1833"
         },
         {
           "key": "3",
-          "label": "24"
+          "label": "1848"
         }
       ]
     }
