@@ -1,5 +1,7 @@
 .questions-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
 
   .questions-contents {
     flex: 1;
@@ -26,6 +28,6 @@
   }
 
   .result {
-    flex: 0 0 30%;
+    flex: 0 1 30%;
   }
 }

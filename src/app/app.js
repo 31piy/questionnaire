@@ -5,12 +5,13 @@ export const AppComponent = {
 
   controller: class App {
     /** @ngInject */
-    constructor($log) {
+    constructor($log, $scope) {
       this.$log = $log;
+      this.$scope = $scope;
     }
 
     scanAnswers() {
-      this.resetValidationState();
+      this.resetState();
 
       const questions = this.data.questions;
       const allAnswers = questions.map((_, index) => this.answers[index]);
@@ -25,8 +26,16 @@ export const AppComponent = {
         return false;
       }
 
+      this.state.showResult = true;
+
       questions.forEach((question, index) => {
         this.state.validation.answers[index] = question.answer_key !== allAnswers[index];
+
+        if (this.state.validation.answers[index]) {
+          this.chart.data[0][0]++;
+        } else {
+          this.chart.data[0][1]++;
+        }
       });
 
       if (this.state.validation.answers.some(Boolean)) {
@@ -37,28 +46,50 @@ export const AppComponent = {
       return true;
     }
 
-    resetValidationState() {
-      this.state.validation = {
-        globalMessage: '',
-        answers: []
+    resetState() {
+      this.chart.data = [[0, 0]];
+
+      this.state = {
+        showResult: false,
+        validation: {
+          globalMessage: '',
+          answers: []
+        }
       };
     }
 
     resetForm() {
       this.answers = [];
-      this.resetValidationState();
+      this.resetState();
     }
 
     $onInit() {
       this.data = require('../data.json');
       this.answers = [];
 
-      this.state = {
-        validation: {
-          globalMessage: '',
-          answers: []
+      this.chart = {
+        labels: ['Correct', 'Incorrect'],
+        series: ['Numbers'],
+        data: [
+          [0, 0]
+        ],
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                min: 0,
+                callback(value) {
+                  if (Math.floor(value) === value) {
+                    return value;
+                  }
+                }
+              }
+            }]
+          }
         }
       };
+
+      this.resetState();
     }
   }
 };
