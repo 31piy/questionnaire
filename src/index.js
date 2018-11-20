@@ -6,7 +6,6 @@ import 'angular-chart.js';
 import routesConfig from './routes';
 import {AppComponent} from './app/app';
 
-import 'bootstrap/scss/bootstrap.scss';
 import './index.scss';
 
 export const app = 'app';
