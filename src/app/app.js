@@ -32,9 +32,9 @@ export const AppComponent = {
         this.state.validation.answers[index] = question.answer_key !== allAnswers[index];
 
         if (this.state.validation.answers[index]) {
-          this.chart.data[0][0]++;
-        } else {
           this.chart.data[0][1]++;
+        } else {
+          this.chart.data[0][0]++;
         }
       });
 
