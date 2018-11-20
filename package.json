@@ -71,7 +71,8 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "postinstall": "gulp"
+    "postinstall": "gulp",
+    "start": "node server.js"
   },
   "engines": {
     "node": "8.12.0"
